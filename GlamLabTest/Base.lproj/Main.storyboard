@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ef8-PJ-fLT">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Fsd-4z-h11">
+            <objects>
+                <viewController id="Ef8-PJ-fLT" customClass="ViewController" customModule="GlamLabTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c1O-gg-7Da">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W99-xL-CbY">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Uf-MC-eKw">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQy-cq-iJe">
+                                <rect key="frame" x="96" y="323" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="play-icon"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="Ef8-PJ-fLT" eventType="touchUpInside" id="lXC-KH-v3a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sQ9-Fa-js8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W99-xL-CbY" firstAttribute="leading" secondItem="sQ9-Fa-js8" secondAttribute="leading" id="CQg-t7-kld"/>
+                            <constraint firstItem="sQ9-Fa-js8" firstAttribute="bottom" secondItem="5Uf-MC-eKw" secondAttribute="bottom" id="DfQ-Js-H3o"/>
+                            <constraint firstItem="sQ9-Fa-js8" firstAttribute="bottom" secondItem="W99-xL-CbY" secondAttribute="bottom" id="FKV-g2-ICA"/>
+                            <constraint firstItem="sQ9-Fa-js8" firstAttribute="trailing" secondItem="W99-xL-CbY" secondAttribute="trailing" id="Mkj-fX-wti"/>
+                            <constraint firstItem="W99-xL-CbY" firstAttribute="top" secondItem="sQ9-Fa-js8" secondAttribute="top" id="Ohs-ik-lF0"/>
+                            <constraint firstItem="sQ9-Fa-js8" firstAttribute="trailing" secondItem="5Uf-MC-eKw" secondAttribute="trailing" id="lbX-Gr-auw"/>
+                            <constraint firstItem="5Uf-MC-eKw" firstAttribute="top" secondItem="sQ9-Fa-js8" secondAttribute="top" id="ndt-Vv-Amp"/>
+                            <constraint firstItem="5Uf-MC-eKw" firstAttribute="leading" secondItem="sQ9-Fa-js8" secondAttribute="leading" id="wRM-ke-8XM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btMain" destination="UQy-cq-iJe" id="Ktq-II-H0z"/>
+                        <outlet property="imFirst" destination="W99-xL-CbY" id="wtp-Wi-f6N"/>
+                        <outlet property="imSecond" destination="5Uf-MC-eKw" id="84G-Rq-D5u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2GU-xy-wqo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play-icon" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
