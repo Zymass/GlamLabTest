@@ -5,4 +5,4 @@ https://user-images.githubusercontent.com/70097857/216878791-c1ebcf38-6709-4558-
 # GlamLabTest
 
 Hi all.
-This is my test case based on CoreML
+This is my test task based on CoreML.
